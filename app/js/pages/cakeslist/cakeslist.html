@@ -1,0 +1,9 @@
+<a ui-sref="add">Add a new cake</a>
+
+<ul class="cakeList">
+	<li ng-repeat="x in page">
+		<a ui-sref="cake({'id':x.id})">
+			<img ng-src="{{x.imageUrl}}" alt="Cake: {{x.name}}" />{{x.name}}
+		</a>
+	</li>
+</ul>

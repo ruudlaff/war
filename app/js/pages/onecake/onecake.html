@@ -1,0 +1,13 @@
+<img ng-src="{{page.imageUrl}}" alt="Cake: {{page.name}}" class="oneCakeImage" />
+<dl class="oneCake">
+  <dt>ID</dt>
+  <dd>{{page.id}}</dd>
+  <dt ng-if="page.name">Name</dt>
+  <dd>{{page.name}}</dd>
+  <dt ng-if="page.comment">Comment</dt>
+  <dd>{{page.comment}}</dd>
+  <dt ng-if="page.yumFactor">Yum factor</dt>
+  <dd>{{page.yumFactor}}</dd>
+</dl>
+
+<a ui-sref="cakes">Back to all the yummy cakes</a>

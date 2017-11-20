@@ -1,0 +1,24 @@
+<form class="form" id="form" name="form" ng-submit="submit()">
+	<p>
+		<label for="name">Name</label>
+		<input type="text" name="name" id="name" ng-model="page.name" required />
+		<span class="error" ng-if="form.name.$dirty && form.name.$invalid">Please enter a name for your cake.</span>
+	</p>
+	<p>
+		<label for="comment">Comment</label>
+		<input type="text" name="comment" id="comment" ng-model="page.comment" required />
+		<span class="error" ng-if="form.comment.$dirty && form.comment.$invalid">Please enter a comment for your cake.</span>
+	</p>
+	<p>
+		<label for="imageUrl">Image url</label>
+		<input type="text" name="imageUrl" id="imageUrl" ng-model="page.imageUrl" required />
+		<span class="error" ng-if="form.imageUrl.$dirty && form.imageUrl.$invalid">Please enter a valid image URL for your cake.</span>
+	</p>
+	<p>
+		<label for="yumFactor">Yum factor</label>
+		<input type="number" name="yumFactor" id="yumFactor" ng-model="page.yumFactor" min="1" max="5" step="1" required />
+		<span class="error" ng-if="form.yumFactor.$dirty && form.yumFactor.$invalid">Please enter a yum factor between 1 and 5.</span>
+	</p>
+	<input type="submit" id="submit" value="Add cake" ng-disabled="form.$invalid" />
+	<input type="button" id="cancel" value="Cancel" ng-click="goBack()" />
+</form>
