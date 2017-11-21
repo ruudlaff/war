@@ -16,11 +16,11 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 </head>
-<body ng-app="cakeApp" ng-controller="cakeController">
+<body ng-app="cakeApp" ng-controller="cakeController" class="body">
 	<header role="banner" class="header">
 		<h1>{{content.header}}</h1>
 	</header>
-	<article>
+	<article class="article">
 		<div ng-if="!loadingnow" class="content" ui-view></div>
 		<div ng-if="loadingnow" class="loader">
 			<p class="text" role="alert">{{loadingMessage}}</p>

@@ -3,7 +3,8 @@
 <ul class="cakeList">
 	<li ng-repeat="x in page">
 		<a ui-sref="cake({'id':x.id})">
-			<img ng-src="{{x.imageUrl}}" alt="Cake: {{x.name}}" />{{x.name}}
+			<img ng-src="{{x.imageUrl}}" alt="Cake: {{x.name}}" />
+			<span class="text">{{x.name}}</span>
 		</a>
 	</li>
 </ul>

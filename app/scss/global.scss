@@ -1,3 +1,17 @@
+body.body {
+	text-align: center;
+}
+
+header.header, article.article {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: left;
+}
+
 header.header {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+	height: 100px;
+	box-sizing: border-box;
+	padding: 20px 0;
+	background: #eee;
 }
